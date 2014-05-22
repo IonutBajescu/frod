@@ -1,0 +1,194 @@
+{
+    "jquery:2.0.3": {
+        "version": "2.0.3",
+        "src": [
+            "http:\/\/cdnjs.cloudflare.com\/ajax\/libs\/jquery\/2.0.3\/jquery.js"
+        ]
+    },
+    "jquery": {
+        "version": "2.1.1",
+        "src": [
+            "http:\/\/cdnjs.cloudflare.com\/ajax\/libs\/jquery\/2.1.1\/jquery.min.js"
+        ]
+    },
+    "bootstrap:3.1.1": {
+        "version": "3.1.1",
+        "src": [
+            "http:\/\/netdna.bootstrapcdn.com\/bootstrap\/3.1.1\/css\/bootstrap.min.css",
+            "http:\/\/netdna.bootstrapcdn.com\/bootstrap\/3.1.1\/js\/bootstrap.min.js"
+        ]
+    },
+    "bootstrap": {
+        "version": "3.1.1",
+        "src": [
+            "http:\/\/netdna.bootstrapcdn.com\/bootstrap\/3.1.1\/css\/bootstrap.min.css",
+            "http:\/\/netdna.bootstrapcdn.com\/bootstrap\/3.1.1\/js\/bootstrap.min.js"
+        ]
+    },
+    "datatables:1.10.0": {
+        "version": "1.10.0",
+        "src": [
+            "http:\/\/cdn.datatables.net\/1.10.0\/css\/jquery.dataTables.css",
+            "http:\/\/cdn.datatables.net\/1.10.0\/js\/jquery.dataTables.js"
+        ]
+    },
+    "datatables": {
+        "version": "1.10.0",
+        "src": [
+            "http:\/\/cdn.datatables.net\/1.10.0\/css\/jquery.dataTables.css",
+            "http:\/\/cdn.datatables.net\/1.10.0\/js\/jquery.dataTables.js"
+        ]
+    },
+    "bootstrap-datatables:1.10.0": {
+        "version": "1.10.0",
+        "src": [
+            "http:\/\/cdn.datatables.net\/plug-ins\/e9421181788\/integration\/bootstrap\/3\/dataTables.bootstrap.css",
+            "http:\/\/cdn.datatables.net\/1.10.0\/js\/jquery.dataTables.js",
+            "http:\/\/cdn.datatables.net\/plug-ins\/e9421181788\/integration\/bootstrap\/3\/dataTables.bootstrap.js"
+        ]
+    },
+    "bootstrap-datatables": {
+        "version": "1.10.0",
+        "src": [
+            "http:\/\/cdn.datatables.net\/plug-ins\/e9421181788\/integration\/bootstrap\/3\/dataTables.bootstrap.css",
+            "http:\/\/cdn.datatables.net\/1.10.0\/js\/jquery.dataTables.js",
+            "http:\/\/cdn.datatables.net\/plug-ins\/e9421181788\/integration\/bootstrap\/3\/dataTables.bootstrap.js"
+        ]
+    },
+    "jquery-ui:1.10.4": {
+        "version": "1.10.4",
+        "src": [
+            "http:\/\/code.jquery.com\/ui\/1.10.4\/themes\/smoothness\/jquery-ui.css",
+            "http:\/\/code.jquery.com\/ui\/1.10.4\/jquery-ui.js"
+        ]
+    },
+    "jquery-ui": {
+        "version": "1.10.4",
+        "src": [
+            "http:\/\/code.jquery.com\/ui\/1.10.4\/themes\/smoothness\/jquery-ui.css",
+            "http:\/\/code.jquery.com\/ui\/1.10.4\/jquery-ui.js"
+        ]
+    },
+    "jquery:2.1.1": {
+        "version": "2.1.1",
+        "src": [
+            "http:\/\/cdnjs.cloudflare.com\/ajax\/libs\/jquery\/2.1.1\/jquery.min.js"
+        ]
+    },
+    "bootstrap:3.0.3": {
+        "version": "3.0.3",
+        "src": [
+            "http:\/\/cdnjs.cloudflare.com\/ajax\/libs\/twitter-bootstrap\/3.0.3\/css\/bootstrap.min.css",
+            "http:\/\/cdnjs.cloudflare.com\/ajax\/libs\/twitter-bootstrap\/3.0.3\/js\/bootstrap.min.js"
+        ]
+    },
+    "test:3.1.1": {
+        "version": "3.1.1",
+        "src": [
+            "http:\/\/netdna.bootstrapcdn.com\/bootstrap\/3.1.1\/css\/bootstrap.min.css"
+        ]
+    },
+    "test": {
+        "version": "3.1.1",
+        "src": [
+            "http:\/\/netdna.bootstrapcdn.com\/bootstrap\/3.1.1\/css\/bootstrap.min.css"
+        ]
+    },
+    "0": {
+        "jquery:2.0.3": {
+            "version": "2.0.3",
+            "src": [
+                "http:\/\/cdnjs.cloudflare.com\/ajax\/libs\/jquery\/2.0.3\/jquery.js"
+            ]
+        },
+        "jquery": {
+            "version": "2.1.1",
+            "src": [
+                "http:\/\/cdnjs.cloudflare.com\/ajax\/libs\/jquery\/2.1.1\/jquery.min.js"
+            ]
+        },
+        "bootstrap:3.1.1": {
+            "version": "3.1.1",
+            "src": [
+                "http:\/\/netdna.bootstrapcdn.com\/bootstrap\/3.1.1\/css\/bootstrap.min.css",
+                "http:\/\/netdna.bootstrapcdn.com\/bootstrap\/3.1.1\/js\/bootstrap.min.js"
+            ]
+        },
+        "bootstrap": {
+            "version": "3.1.1",
+            "src": [
+                "http:\/\/netdna.bootstrapcdn.com\/bootstrap\/3.1.1\/css\/bootstrap.min.css",
+                "http:\/\/netdna.bootstrapcdn.com\/bootstrap\/3.1.1\/js\/bootstrap.min.js"
+            ]
+        },
+        "datatables:1.10.0": {
+            "version": "1.10.0",
+            "src": [
+                "http:\/\/cdn.datatables.net\/1.10.0\/css\/jquery.dataTables.css",
+                "http:\/\/cdn.datatables.net\/1.10.0\/js\/jquery.dataTables.js"
+            ]
+        },
+        "datatables": {
+            "version": "1.10.0",
+            "src": [
+                "http:\/\/cdn.datatables.net\/1.10.0\/css\/jquery.dataTables.css",
+                "http:\/\/cdn.datatables.net\/1.10.0\/js\/jquery.dataTables.js"
+            ]
+        },
+        "bootstrap-datatables:1.10.0": {
+            "version": "1.10.0",
+            "src": [
+                "http:\/\/cdn.datatables.net\/plug-ins\/e9421181788\/integration\/bootstrap\/3\/dataTables.bootstrap.css",
+                "http:\/\/cdn.datatables.net\/1.10.0\/js\/jquery.dataTables.js",
+                "http:\/\/cdn.datatables.net\/plug-ins\/e9421181788\/integration\/bootstrap\/3\/dataTables.bootstrap.js"
+            ]
+        },
+        "bootstrap-datatables": {
+            "version": "1.10.0",
+            "src": [
+                "http:\/\/cdn.datatables.net\/plug-ins\/e9421181788\/integration\/bootstrap\/3\/dataTables.bootstrap.css",
+                "http:\/\/cdn.datatables.net\/1.10.0\/js\/jquery.dataTables.js",
+                "http:\/\/cdn.datatables.net\/plug-ins\/e9421181788\/integration\/bootstrap\/3\/dataTables.bootstrap.js"
+            ]
+        },
+        "jquery-ui:1.10.4": {
+            "version": "1.10.4",
+            "src": [
+                "http:\/\/code.jquery.com\/ui\/1.10.4\/themes\/smoothness\/jquery-ui.css",
+                "http:\/\/code.jquery.com\/ui\/1.10.4\/jquery-ui.js"
+            ]
+        },
+        "jquery-ui": {
+            "version": "1.10.4",
+            "src": [
+                "http:\/\/code.jquery.com\/ui\/1.10.4\/themes\/smoothness\/jquery-ui.css",
+                "http:\/\/code.jquery.com\/ui\/1.10.4\/jquery-ui.js"
+            ]
+        },
+        "jquery:2.1.1": {
+            "version": "2.1.1",
+            "src": [
+                "http:\/\/cdnjs.cloudflare.com\/ajax\/libs\/jquery\/2.1.1\/jquery.min.js"
+            ]
+        },
+        "bootstrap:3.0.3": {
+            "version": "3.0.3",
+            "src": [
+                "http:\/\/cdnjs.cloudflare.com\/ajax\/libs\/twitter-bootstrap\/3.0.3\/css\/bootstrap.min.css",
+                "http:\/\/cdnjs.cloudflare.com\/ajax\/libs\/twitter-bootstrap\/3.0.3\/js\/bootstrap.min.js"
+            ]
+        },
+        "test:3.1.1": {
+            "version": "3.1.1",
+            "src": [
+                "http:\/\/netdna.bootstrapcdn.com\/bootstrap\/3.1.1\/css\/bootstrap.min.css"
+            ]
+        },
+        "test": {
+            "version": "3.1.1",
+            "src": [
+                "http:\/\/netdna.bootstrapcdn.com\/bootstrap\/3.1.1\/css\/bootstrap.min.css"
+            ]
+        }
+    }
+}

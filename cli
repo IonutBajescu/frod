@@ -1,0 +1,24 @@
+#!/usr/bin/env php
+<?php
+// frod
+
+$vendorDir = dirname(dirname(__DIR__));
+require $vendorDir.'/autoload.php';
+$frodBase = $vendorDir.'/ionut/frod/src/Ionut/Frod';
+require $frodBase.'/helpers.php';
+
+
+if(file_exists($laravelStart = $vendorDir.'/../bootstrap/start.php')){
+	require_once $laravelStart;
+}
+
+use \Ionut\Frod\Console\Application;
+
+$commands = ['Update', 'Downdate'];
+
+$application = new Application();
+foreach($commands as $command) {
+    $instance = call_user_func([new ReflectionClass("Ionut\\Frod\\Console\\Commands\\{$command}"), 'newInstance']);
+    $application->add($instance);
+}
+$application->run();
