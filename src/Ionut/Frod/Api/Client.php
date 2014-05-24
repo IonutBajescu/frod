@@ -74,10 +74,10 @@ class Client{
 	 */
 	public function combineRequest()
 	{
-		$responses = call_user_func_array([$this, 'request'], func_get_args());
+		$responses   = call_user_func_array([$this, 'request'], func_get_args());
 		$responseSum = array();
 		foreach($responses as $response){
-			$responseSum = (array)$response+$responses;
+			$responseSum = (array)$response+$responseSum;
 		}
 		return (object)$responseSum;
 	}
