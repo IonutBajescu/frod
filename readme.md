@@ -5,7 +5,8 @@ Frod
 [![Latest Version](http://img.shields.io/packagist/v/ionut/frod.svg)](https://packagist.org/packages/ionut/frod)
 [![Dependency Status](https://www.versioneye.com/php/ionut:frod/badge.svg)](https://www.versioneye.com/php/ionut:frod)
 
-Frod is a Real Time Package Manager.
+Frod is a Real Time Frontend Package Manager. <br/>
+You can use packages(ex: jquery, bootstrap, semantic-ui) without need to manually download them.
 
 Install with composer take only a few seconds.
 ```bash
