@@ -34,5 +34,14 @@
         "classmap": [
            "src/Ionut/Frod/Facades/Unique"
         ]
+    },
+
+    "scripts": {
+        "post-install-cmd": [
+            "./cli update"
+        ],
+        "post-update-cmd": [
+            "./cli update"
+        ]
     }
 }
