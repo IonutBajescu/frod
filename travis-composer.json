@@ -1,0 +1,38 @@
+{
+    "name": "ionut/frod",
+    "type": "library",
+    "description": "Frontend Package Management",
+    "keywords": ["package","management"],
+    "homepage": "http://frod.ionut-bajescu.com/intro",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ionut Bajescu",
+            "email": "office@ionut-bajescu.com",
+            "homepage": "http://ionut-bajescu.com",
+            "role": "Programmer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "leafo/lessphp": "0.4.0",
+        "leafo/scssphp": "0.0.10",
+        "symfony/console": "2.4.4",
+        "werkint/jsmin": "1.0.0",
+        "illuminate/console": "4.1.25"
+    },
+    "require-dev": {
+        "php": ">=5.4.0",
+        "phpunit/phpunit": "3.7.*",
+        "mockery/mockery": "0.9"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "Ionut\\Frod": "vendor/ionut/frod/src"
+        },
+        "classmap": [
+           "vendor/ionut/frod/src/Ionut/Frod/Facades/Unique"
+        ]
+    }
+}
