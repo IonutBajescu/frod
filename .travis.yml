@@ -1,0 +1,24 @@
+language: php
+
+php:
+  - 5.4
+  - 5.5
+  - 5.6
+  - hhvm
+  - hhvm-nightly
+
+install:
+  - composer selfupdate
+  - composer install --no-interaction --no-scripts --quiet
+  - mkdir -p vendor/ionut && mkdir -p vendor/ionut/frod && mv `ls -A | grep -v vendor` ./vendor/ionut/frod
+  - cp vendor/ionut/frod/travis-composer.json composer.json
+  - composer dumpautoload --quiet
+
+script: cd vendor/ionut/frod && ./cli update && phpunit --verbose
+
+matrix:
+  allow_failures:
+    - php: 5.6
+    - php: hhvm
+    - php: hhvm-nightly
+  fast_finish: true
