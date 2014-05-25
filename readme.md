@@ -1,5 +1,10 @@
 Frod
 ====================
+[![Build Status](https://img.shields.io/travis/IonutBajescu/frod.svg)](https://travis-ci.org/IonutBajescu/frod)
+[![Total Downloads](https://img.shields.io/packagist/dt/ionut/frod.svg)](https://packagist.org/packages/ionut/frod)
+[![Latest Version](http://img.shields.io/packagist/v/ionut/frod.svg)](https://packagist.org/packages/ionut/frod)
+[![Dependency Status](https://www.versioneye.com/php/ionut:frod/badge.svg)](https://www.versioneye.com/php/ionut:frod)
+
 Frod is a Real Time Package Manager.
 
 Install with composer take only a few seconds.
