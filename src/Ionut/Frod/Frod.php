@@ -169,12 +169,14 @@ class Frod {
 			$packages = call_user_func_array([$this, $method.'Links'], $packages);
 		}
 
-		$output = '';
-		foreach($packages as $src){
-			$output .= $this->htmlElement($src);
+		if($methods[count($methods)-1] != 'movable'){
+			$output = '';
+			foreach($packages as $src){
+				$output .= $this->htmlElement($src);
+			}
 		}
 
-		return $output;
+		return $output ?: $packages;
 	}
 
 	/**
