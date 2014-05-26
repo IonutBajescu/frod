@@ -235,6 +235,43 @@ class Frod {
 		return $this->storage->getPublicUrl($compiledFilename);
 	}
 
+	/**
+	 * Start frod buffer.
+	 *
+	 * @return void
+	 */
+	public function bufferStart()
+	{
+		ob_start();
+	}
+
+	/**
+	 * Stop FROD buffer.
+	 *
+	 * @param  array $methods Methods to apply for captured html.
+	 * @return string Return HTML. Only if last method is
+	 *                movable return an object with ->css and ->js proprietes.
+	 */
+	public function bufferStop(array $methods = array())
+	{
+		$html  = ob_get_contents();
+		ob_end_clean();
+		$links = $this->htmlToLinks($html);
+
+		foreach($methods as $method){
+			$html  = call_user_func_array([$this, $method], $links);
+
+			if($method == 'movable'){
+				return $html;
+			}
+
+			$links = $this->htmlToLinks($html);
+		}
+
+
+		return call_user_func_array([$this, 'packages'], $links);
+	}
+
 
 	/**
 	 * Minify sources. This function have ability to determine
