@@ -220,15 +220,16 @@ class Frod {
 
 		$compiledFilename = $srcFilename.'.'.$compilerResult; // target file
 
-		$fileChanged      = $this->srcHasChanged($srcFilename, $compiledFilename);
+		$fileChanged      = $this->srcHasChanged($src, $compiledFilename);
 
-		// if local file, eg css/test.scss is modified then we update
+		// if local file, eg css/test.scss, is modified then we update
 		if(!$this->storage->exists($compiledFilename) || $fileChanged ){
 
 			$http_src = $this->src($src);
 			$path     = $this->storageGetFile($http_src);
 
 			$compiled = $compiler($http_src);
+
 			$this->storage->save($compiledFilename, $compiled);
 		}
 
@@ -252,7 +253,7 @@ class Frod {
 	 * @return string Return HTML. Only if last method is
 	 *                movable return an object with ->css and ->js proprietes.
 	 */
-	public function bufferStop(array $methods = array())
+	public function bufferStop(array $methods = array(), $echo = false)
 	{
 		$html  = ob_get_contents();
 		ob_end_clean();
@@ -268,8 +269,9 @@ class Frod {
 			$links = $this->htmlToLinks($html);
 		}
 
-
-		return call_user_func_array([$this, 'packages'], $links);
+		$return = call_user_func_array([$this, 'packages'], $links);
+		if($echo) echo $return;
+		return $return;
 	}
 
 
@@ -442,6 +444,16 @@ class Frod {
 	 */
 	public function srcHasChanged($src, $targetFileName)
 	{
+
+		if(strpos($targetFileName, url('')) !== false){
+			$targetFileName = basename($targetFileName);
+		}
+
+		if(strpos($src, url('')) !== false){
+			$src = str_replace(url(''), '', $src);
+			$src = public_path($src);
+		}
+
 		$fileIsLocal = !preg_match('#http://#', $src) && !preg_match('#https://#', $src);
 		if($fileIsLocal){
 			return $this->fileChanged($src, $this->storage->getFile($targetFileName));

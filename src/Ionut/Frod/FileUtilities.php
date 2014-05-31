@@ -23,11 +23,16 @@ trait FileUtilities {
 	 */
 	public function fileChanged($file1, $file2)
 	{
-		if(!file_exists($file1) || !file_exists($file2)) {
+		if(!file_exists($file1) || !file_exists($file2)){
 			return true;
 		}
+		$changed = filemtime($file1) > filemtime($file2);
 
-		return filemtime($file1) >= filemtime($file2);
+		//If file changed we clear all data.
+		if($changed){
+			$this->storage->deleteAll();
+		}
+
+		return $changed;
 	}
 }
-
