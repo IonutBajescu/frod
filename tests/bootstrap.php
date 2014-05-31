@@ -9,7 +9,7 @@ include __DIR__.'/UnitTestCase.php';
 
 function base_path()
 {
-	return pathUpLevels(__DIR__, 6);
+	return pathUpLevels(__DIR__, 5);
 }
 
 // this function NOT return URL, in CLI Mode we can't
