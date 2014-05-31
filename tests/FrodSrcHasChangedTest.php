@@ -60,7 +60,9 @@ class FrodSrcHasChangedTest extends UnitTestCase {
 
 	public function clear(){
 		foreach (func_get_args() as $path) {
-			unlink($path);
+			if(file_exists($path)){
+				unlink($path);
+			}
 		}
 	}
 
