@@ -17,9 +17,9 @@
         "php": ">=5.4.0",
         "leafo/lessphp": "0.4.0",
         "leafo/scssphp": "0.0.10",
-        "symfony/console": "2.4.4",
-        "werkint/jsmin": "1.0.0",
-        "illuminate/console": "4.1.25"
+        "symfony/console": "2.5.*",
+        "werkint/jsmin": "1.0",
+        "illuminate/console": "4.2.*"
     },
     "require-dev": {
         "php": ">=5.4.0",
