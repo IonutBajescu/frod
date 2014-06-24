@@ -1,0 +1,13 @@
+{
+	"1.1.*": [
+		{"message": "Improved auto-clear on files update"},
+		{"message": "Bugfix: bash path unit testing"},
+		{"message": "Added buffer feature"}
+	],
+	"1.0.*": [
+		{"message": "Added testing prepare tool"},
+		{"message": "Added plugin dir as a application compatible composer"},
+		{"message": "Bugfix: allow movable method on chaining"},
+		{"message": "Bugfix: api client don't combine correctly responses"}
+	]
+}
