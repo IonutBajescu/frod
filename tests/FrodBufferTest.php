@@ -35,17 +35,12 @@ JS;
 		$links = $frod->htmlToLinks($result);
 		$this->assertCount(2, $links);
 
-		foreach($links as $link){
-			$contents = file_get_contents($link);
-			if(preg_match('/\.css$/', $link)){
-				$this->assertContains($input1, $contents);
-				$this->assertContains($input2, $contents);
-			}
+		$cssContents = file_get_contents($links[0]);
+		$this->assertContains($input1, $cssContents);
+		$this->assertContains($input2, $cssContents);
 
-			if(preg_match('/\.js$/', $link)){
-				$this->assertContains('jQuery v2.0.3', $contents);
-			}
-		}
+		$jsContents  = file_get_contents($links[1]);
+		$this->assertContains('jQuery v2.0.3', $jsContents);
 	}
 
 	public function testBufferWithMovable()
