@@ -18,7 +18,7 @@
         "leafo/lessphp": "0.4.0",
         "leafo/scssphp": "0.0.10",
         "werkint/jsmin": "1.0",
-        "illuminate/console": "4.2.*"
+        "illuminate/console": ">=4.2"
     },
     "require-dev": {
         "php": ">=5.4.0",
